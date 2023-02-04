@@ -1,0 +1,12 @@
+- name: Run docker-compose on multiple hosts
+  hosts: all
+  become: 'yes'
+  tasks:
+    - name: Copy docker-compose.yaml file to remote hosts
+      copy:
+        src: /path/to/source/docker-compose.yaml
+        dest: /path/to/destination/docker-compose.yaml
+    - name: Start containers with docker-compose
+      command: docker-compose -f /path/to/destination/docker-compose.yaml up -d
+      args:
+        chdir: /path/to/destination

@@ -1,0 +1,7 @@
+[servers]
+server1 ansible_host=192.168.1.111 ansible_user=user
+server2 ansible_host=192.168.1.222 ansible_user=user
+
+[all:vars]
+ansible_connection=ssh
+ansible_python_interpreter=/usr/bin/python3
