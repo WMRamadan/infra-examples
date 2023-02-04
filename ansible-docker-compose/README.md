@@ -2,7 +2,7 @@
 
 Run docker-compose on multiple hosts
 
-![Ansible](images/ansible_docker_compose.png)
+![Ansible](images/ansible_docker_compose_diag.png)
 
 ## Setup
 
