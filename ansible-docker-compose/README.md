@@ -2,6 +2,8 @@
 
 Run docker-compose on multiple hosts
 
+![Ansible](images/ansible_docker_compose.png)
+
 ## Setup
 
 1. Replace `remote_user` and `private_key_file` with correct settings in `ansible.cfg`
